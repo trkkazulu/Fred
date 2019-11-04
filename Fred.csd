@@ -8,6 +8,7 @@ Added features are stereo panning (spread) of the dust, a random tonal variation
 <Cabbage>
 form caption("Fred"), size(510, 100), pluginid("dust") style("legacy")
 image    bounds(0, 0, 510, 80), , , , outlinethickness(2) colour(0, 255, 0, 128)
+image    bounds(0, 0, 510, 80), file("171121.jpg"), , , , outlinethickness(2) colour(0, 255, 0, 128)
 checkbox bounds( 10, 10, 80, 15), text("On/Off"), channel("onoff"), value(0), fontcolour("white")
 rslider  bounds( 70, 10, 60, 60), text("Power"), channel("amp"),     range(0, 1.00, 0.5, 0.5, 0.001),   textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
 rslider  bounds(125, 10, 60, 60), text("Scrub"),     channel("freq"),    range(0.1, 20000, 500, 0.5, 0.01), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
