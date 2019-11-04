@@ -7,16 +7,16 @@ Added features are stereo panning (spread) of the dust, a random tonal variation
 
 <Cabbage>
 form caption("Fred"), size(510, 100), pluginid("dust") style("legacy")
-image    bounds(0, 0, 510, 80), colour(155, 109, 50, 255), , , outlinethickness(2) 
+image    bounds(0, 0, 510, 80), , , , outlinethickness(2) colour(0, 255, 0, 128)
 checkbox bounds( 10, 10, 80, 15), text("On/Off"), channel("onoff"), value(0), fontcolour("white")
-rslider  bounds( 70, 10, 60, 60), text("Amplitude"), channel("amp"),     range(0, 1.00, 0.5, 0.5, 0.001),   textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
-rslider  bounds(125, 10, 60, 60), text("Freq."),     channel("freq"),    range(0.1, 20000, 500, 0.5, 0.01), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
-rslider  bounds(180, 10, 60, 60), text("Spread"),    channel("spread"),  range(0, 1.00, 1),                 textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
-rslider  bounds(235, 10, 60, 60), text("Tone Var."), channel("ToneVar"), range(0, 1.00, 0),                 textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
+rslider  bounds( 70, 10, 60, 60), text("Power"), channel("amp"),     range(0, 1.00, 0.5, 0.5, 0.001),   textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
+rslider  bounds(125, 10, 60, 60), text("Scrub"),     channel("freq"),    range(0.1, 20000, 500, 0.5, 0.01), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
+rslider  bounds(180, 10, 60, 60), text("Depth"),    channel("spread"),  range(0, 1.00, 1),                 textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
+rslider  bounds(235, 10, 60, 60), text("Density."), channel("ToneVar"), range(0, 1.00, 0),                 textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
 rslider  bounds(290, 10, 60, 60), text("Lowpass"),   channel("LPF"),     range(20,20000,20000,0.5),         textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
 rslider  bounds(345, 10, 60, 60), text("Highpass"),  channel("HPF"),     range(20,20000,20,0.5), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
-rslider bounds(400, 10, 60, 60), text("Modulation"), channel("modFreq"), range(0, 5, 0.5),textcolour("white") , colour(105, 20, 20, 255), outlinecolour(155, 100, 100, 255), trackercolour(220, 160, 160, 255)
-rslider bounds(450, 10, 60, 60), text("Intensity"), channel("inten"), range(0, 10, 1), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
+rslider bounds(400, 10, 60, 60), text("Modulation"), channel("modFreq"), range(0, 14, 0.5),textcolour("white") , colour(105, 20, 20, 255), outlinecolour(155, 100, 100, 255), trackercolour(220, 160, 160, 255)
+rslider bounds(450, 10, 60, 60), text("Strength"), channel("inten"), range(0, 10, 1), textcolour("white"), colour(105, 20, 20), outlinecolour(155,100,100), trackercolour(220,160,160)
 </Cabbage>
 
 <CsoundSynthesizer>
